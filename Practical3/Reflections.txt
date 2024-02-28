@@ -1,0 +1,1 @@
+Actually, the whole process wasn't very easy, and I've met many troubles. For example, I don't know how to “add	a	Jekyll	theme	to	your	site", and it takes a long time to fix.
