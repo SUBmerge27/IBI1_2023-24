@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer:
+# Answer:Sum 100 random numbers togerther.
 
 # Import libraries
 # randint allows drawing a random number,
