@@ -1,0 +1,7 @@
+My question: How has the DALYs changed in the UK over time? 
+answer line number:34
+discuss the result:it generally fits what i expected. The DALY of uk keeps decreasing 
+from 1990 to around 2014, this may beacause of the development of medicine.
+However,after 2014, it keeps fluctuating, which can be explained that typical diseases
+such as Arthritis and Asthma can not be cured thoroughly without causing harm.
+Also, the unhealthy life habits can be attributed.
