@@ -1,0 +1,9 @@
+Generally, it was quite hard. For example, when programming SIR.py, I did'nt realize to use sum() before
+np.random.choice() because I did'nt know what no.random.choice() would return until I tried to print it.
+Besides, when dealing with vaccination_SIR.py, I did'nt know to create a new list to store the results under
+each vaccination rates, and it took me some effort to use enumerate() to plot all these results on the same
+graph by searching the Internet for assistance. What's more, the hardest part must be Spatial_SIR.py but I did
+enjoy this task a bit more than other tasks. That's becuase it took geographical factors into account, which is
+quite relavent with the COVID-19 pandemic. From this practical, I learned to carefully think through before 
+recklessly begining typing. Additionally, searching the Internet for essential help maybe useful when handling 
+with difficult tasks.
