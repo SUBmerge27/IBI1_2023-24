@@ -1,0 +1,12 @@
+Human vs Mouse alignment score: 3137.0, percentage of identical amino acids: 0.001589825112888871
+Human vs Rat alignment score: 3107.0, percentage of identical amino acids: 0.001589825112888871
+Mouse vs Rat alignment score: 3261.0, percentage of identical amino acids: 0.0015898251192368838
+
+Given these results, mouse and rat are most closely related, because as the protocol says:"
+positive log-odds scores indicate that the event is	more likely	than it	would be under the null	model."
+Therefore, a higher positive score means that this substitution is more common in natural evolution than random probability.
+The results show that Mouse vs Rat has a ralatively higher alignment score and a slightly higher percentage of identical amino acids.
+
+Given the same reason mentioned above, mouse is a better model organism for human than rat, because
+although Human vs Mouse shows a same percentage of identical amino acids as Human vs Rat, 
+but it has a bigger alignment score than that of Human vs Rat.

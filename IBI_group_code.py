@@ -1,20 +1,24 @@
 mRNA_sequence=input("Please type a mRNA sequence:")
 def translate_mRNA_to_polypeptide(mRNA):
     # Define the genetic code as a dictionary
-    genetic_code = {'AUG': 'Methionine', 'UAA': 'Stop', 'UAG': 'Stop', 'UGA': 'Stop', 'UCA': 'Serine', 'UCC': 'Serine', 'UCG': 'Serine', 'UCU': 'Serine', 'AGC': 'Serine', 'AGU': 'Serine',
-'UAC': 'Tyrosine', 'UAA': 'Stop', 'UGU': 'Cysteine', 'UGC': 'Cysteine', 'UUA': 'Leucine', 'UUG': 'Leucine', 'UUU': 'Leucine', 'UUC': 'Leucine',
-'UAG': 'Stop', 'UGG': 'Tryptophan', 'UAU': 'Tyrosine', 'UAA': 'Stop', 'CAC': 'Histidine', 'CAU': 'Histidine', 'GUG': 'Valine', 'GUU': 'Valine',
-'CUC': 'Leucine', 'CUU': 'Leucine', 'CAG': 'Glutamine', 'CAA': 'Glutamine', 'GUA': 'Tryptophan', 'GUU': 'Valine', 'GUC': 'Valine', 'GUU': 'Valine',
-'GAC': 'Asparagine', 'GAU': 'Asparagine', 'GAA': 'Glutamic acid', 'GAG': 'Glutamic acid', 'GUA': 'Tryptophan', 'GUU': 'Valine', 'GUC': 'Valine',
-'GUG': 'Valine', 'UUC': 'Phenylalanine', 'UUU': 'Phenylalanine', 'UUG': 'Leucine', 'UAA': 'Stop', 'AAC': 'Asparagine', 'AAU': 'Asparagine',
-'AAA': 'Lysine', 'AAG': 'Lysine', 'AGA': 'Arginine', 'AGG': 'Arginine', 'AUC': 'Isoleucine', 'AUU': 'Isoleucine', 'UGA': 'Stop',
-'UCC': 'Serine', 'UCA': 'Serine', 'UCG': 'Serine', 'UCU': 'Serine', 'AGC': 'Serine', 'AGU': 'Serine', 'UAC': 'Tyrosine', 'UAA': 'Stop',
-'UGU': 'Cysteine', 'UGC': 'Cysteine', 'UUA': 'Leucine', 'UUG': 'Leucine', 'UUU': 'Leucine', 'UUC': 'Leucine', 'UAG': 'Stop', 'UGG': 'Tryptophan',
-'UAU': 'Tyrosine', 'CAC': 'Histidine', 'CAU': 'Histidine', 'GUG': 'Valine', 'GUU': 'Valine', 'CUC': 'Leucine', 'CUU': 'Leucine', 'CAG': 'Glutamine',
-'CAA': 'Glutamine', 'GUA': 'Tryptophan', 'GUU': 'Valine', 'GUC': 'Valine', 'GUU': 'Valine', 'GAC': 'Asparagine', 'GAU': 'Asparagine',
-'GAA': 'Glutamic acid', 'GAG': 'Glutamic acid', 'UUC': 'Phenylalanine', 'UUU': 'Phenylalanine', 'UUG': 'Leucine', 'UAA': 'Stop', 'AAC': 'Asparagine',
-'AAU': 'Asparagine', 'AAA': 'Lysine', 'AAG': 'Lysine', 'AGA': 'Arginine', 'AGG': 'Arginine', 'AUC': 'Isoleucine', 'AUU': 'Isoleucine',
-    }
+    genetic_code = {
+    'UUU': 'Phenylalanine', 'UUC': 'Phenylalanine',
+    'UUA': 'Leucine', 'UUG': 'Leucine',
+    'UCU': 'Serine', 'UCC': 'Serine', 'UCA': 'Serine', 'UCG': 'Serine',
+    'UAU': 'Tyrosine', 'UAC': 'Tyrosine', 'UAA': 'Stop', 'UAG': 'Stop',
+    'UGU': 'Cysteine', 'UGC': 'Cysteine', 'UGA': 'Stop', 'UGG': 'Tryptophan',
+    'CUU': 'Leucine', 'CUC': 'Leucine', 'CUA': 'Leucine', 'CUG': 'Leucine',
+    'CCU': 'Proline', 'CCC': 'Proline', 'CCA': 'Proline', 'CCG': 'Proline',
+    'CAU': 'Histidine', 'CAC': 'Histidine', 'CAA': 'Glutamine', 'CAG': 'Glutamine',
+    'CGU': 'Arginine', 'CGC': 'Arginine', 'CGA': 'Arginine', 'CGG': 'Arginine',
+    'AUU': 'Isoleucine', 'AUC': 'Isoleucine', 'AUA': 'Isoleucine', 'AUG': 'Methionine',
+    'ACU': 'Threonine', 'ACC': 'Threonine', 'ACA': 'Threonine', 'ACG': 'Threonine',
+    'AAU': 'Asparagine', 'AAC': 'Asparagine', 'AAA': 'Lysine', 'AAG': 'Lysine',
+    'AGU': 'Serine', 'AGC': 'Serine', 'AGA': 'Arginine', 'AGG': 'Arginine',
+    'GUU': 'Valine', 'GUC': 'Valine', 'GUA': 'Valine', 'GUG': 'Valine',
+    'GCU': 'Alanine', 'GCC': 'Alanine', 'GCA': 'Alanine', 'GCG': 'Alanine',
+    'GAU': 'Aspartic acid', 'GAC': 'Aspartic acid', 'GAA': 'Glutamic acid', 'GAG': 'Glutamic acid',
+    'GGU': 'Glycine', 'GGC': 'Glycine', 'GGA': 'Glycine', 'GGG': 'Glycine'}
 
     # Initialize the polypeptide sequence
     polypeptide = ""
