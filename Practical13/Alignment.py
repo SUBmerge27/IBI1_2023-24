@@ -43,9 +43,9 @@ def alignment(human, mouse, rat, blosum62_dict):
             h_and_r_similarity += 1
         if mouse[i] == rat[i]:
             m_and_r_similarity += 1
-        h_and_m_similarity /= len(human) #count the percentage of similarity
-        h_and_r_similarity /= len(human)
-        m_and_r_similarity /= len(human)
+    h_and_m_similarity /= len(human) #count the percentage of similarity
+    h_and_r_similarity /= len(human)
+    m_and_r_similarity /= len(human)
     return h_and_m_score, h_and_r_score, m_and_r_score,h_and_m_similarity,h_and_r_similarity,m_and_r_similarity
 scores = alignment(human, mouse, rat, blosum62_dict)
 print(f"Human vs Mouse alignment score: {scores[0]}, percentage of identical amino acids: {scores[3]}")
